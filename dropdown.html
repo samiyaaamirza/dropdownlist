@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* .nav{
+            font-size: 100px;
+            display: flex;
+          
+        } */
+        .left-menu{
+            flex: 40%;
+            display: flex;
+            font-size: 40px;
+            background-color: aquamarine;
+        }
+        .right-menu{
+            flex: 60%;
+            display: inline;    
+            margin-top: -10px;
+            font-size: medium;
+        }
+
+        .right-menu ul{
+          list-style-type: none;
+           
+          }
+        /* .nav ul{
+            list-style-type: none;
+        } */
+        .right-menu ul li{
+            display: inline;
+            margin-left: 70px;
+            
+           
+            
+        }
+
+       
+        .dropdown .drop-down-list{
+            position: absolute;
+            width: 65px;
+            height: 100px;
+            background-color: rgb(228, 215, 215);
+            position: absolute;
+           font-size: small;
+            display: none;
+        }
+        .dropdown {
+            display: block;
+            position: absolute;
+        
+        }
+        .dropdown:hover .drop-down-list{
+            display: block;
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-menu">
+         logo 
+       
+        <div class="right-menu">
+        <ul> 
+            <li> <a href=""> home </a></li>
+            <li> <a href=""> about us  </a></li>
+            <li> <a href="">   contact  </a></li>
+            <li class="dropdown"> <a href="">  destinations   </a>
+            <div class="drop-down-list">
+                <a href="">delhi</a>
+                <a href="">dehradun</a>
+                <a href="">nainital</a>
+                <a href="">mumbai</a>
+                <a href="">rishikesh</a>
+            </div></li>
+           
+        </ul>
+    </div>
+</div>
+</body>
+</html>
